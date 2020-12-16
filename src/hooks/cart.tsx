@@ -116,6 +116,7 @@ function useCart(): CartContext {
   const context = useContext(CartContext);
 
   if (!context) {
+    // console.log('Erro na criação/utilização do Cart');
     throw new Error(`useCart must be used within a CartProvider`);
   }
 
